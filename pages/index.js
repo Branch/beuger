@@ -1,5 +1,8 @@
 import Head from 'next/head'
 
+import { Card } from '@branch/neumorphism.ui.card';
+import { Button } from '@branch/neumorphism.ui.button';
+
 export default function Home() {
   return (
     <div className="container">
@@ -13,6 +16,21 @@ export default function Home() {
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
+        <Card
+            link="https://harmony-docs.bit.dev/aspects/generator"
+            heading="Templates"
+            text="to see a list of available templates"
+            type="flat"
+            size="sm"
+            padding={[10,10,10,10]}
+        />
+        <p>Tjenare</p>
+        <Button
+            type="flat"
+            size=""
+            text={"tjenare"}
+            padding={[10,10,10,10]}
+        />
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
@@ -198,6 +216,7 @@ export default function Home() {
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
+          background-color: #e0e0e0;
         }
 
         * {
