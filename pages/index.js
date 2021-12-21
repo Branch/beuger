@@ -1,69 +1,65 @@
 import Head from 'next/head'
+import Emoji from '../components/emoji';
 
-import { Card } from '@branch/neumorphism.ui.card';
-import { Button } from '@branch/neumorphism.ui.button';
+import classNames from 'classnames/bind';
+
+/**
+ * Neu style components
+ */
+import { Circle } from '@branch/neumorphism.ui.circle';
+
+/**
+ * Styles
+ */
+
+import aboutStyles from '../assets/styles/modules/about.module.scss';
+
+/**
+ * Images
+ */
+import pic from '../assets/images/me.jpeg';
 
 export default function Home() {
-  return (
+    return (
     <div className="container">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <header>
+        <nav>
+          <a>About</a>
+          <a>Projects</a>
+          <a>Connect</a>
+        </nav>
+      </header>
 
       <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <Card
-            link="https://harmony-docs.bit.dev/aspects/generator"
-            heading="Templates"
-            text="to see a list of available templates"
-            type="flat"
-            size="sm"
-            padding={[10,10,10,10]}
-        />
-        <p>Tjenare</p>
-        <Button
-            type="flat"
-            size=""
-            text={"tjenare"}
-            padding={[10,10,10,10]}
-        />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <section>
+            <div className={aboutStyles.about}>
+                <div className={aboutStyles.half}>
+                    <p className={aboutStyles.hi}>Hello there <Emoji label={"hi"} symbol={"👋"} /> i'm</p>
+                    <h1>
+                        Andreas Beuger
+                    </h1>
+                    <div className={aboutStyles.short}>Fullstack developer + Team lead <Emoji label={"hi"} symbol={"👨‍💻"} /></div>
+                    <p>I do everything from the ground up. From idea to design, server configuration, frontend, backend and project management.</p>
+                    <p>In short, <span className={aboutStyles.highlight}>I do web.</span></p>
+                    <p className={aboutStyles.base}>Based in <Emoji symbol={"🇸🇪"} /></p>
+                </div>
+                <Circle
+                    width={30}
+                    type={"concave"}
+                    size={"md"}
+                    img={pic.src}
+                />
+            </div>
+            <div className={aboutStyles.tech}>
+                <h2>
+                    Stuff i'm familiar with
+                </h2>
+            </div>
+        </section>
       </main>
 
       <footer>
@@ -94,6 +90,7 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          max-width: 1200px;
         }
 
         footer {
@@ -129,17 +126,6 @@ export default function Home() {
         .title a:focus,
         .title a:active {
           text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
         }
 
         .description {

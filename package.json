@@ -8,6 +8,8 @@
   "dependencies": {
     "@branch/neumorphism.ui.button": "^0.0.4",
     "@branch/neumorphism.ui.card": "^0.0.3",
+    "@branch/neumorphism.ui.circle": "^0.0.1",
+    "classnames": "^2.2.6",
     "next": "latest",
     "next-transpile-modules": "^9.0.0",
     "react": "17.0.2",
