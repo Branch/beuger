@@ -16,6 +16,7 @@ import { Circle } from '@branch/neumorphism.ui.circle';
  */
 
 import aboutStyles from '../assets/styles/modules/about.module.scss';
+import projectStyles from '../assets/styles/modules/projects.module.scss';
 
 /**
  * Images
@@ -23,7 +24,7 @@ import aboutStyles from '../assets/styles/modules/about.module.scss';
 import pic from '../assets/images/me.jpeg';
 
 import php from '../assets/images/logos/php.svg';
-import jquery from '../assets/images/logos/jquery-1.svg';
+import npm from '../assets/images/logos/npm.svg';
 import javascript from '../assets/images/logos/javascript.svg';
 import jamstack from '../assets/images/logos/jamstack.svg';
 import github from '../assets/images/logos/github-2.svg';
@@ -69,7 +70,7 @@ export default function Home() {
     return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Home of Andreas</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
@@ -107,183 +108,193 @@ export default function Home() {
             </div>
         </section>
 
+            <section className={aboutStyles.sliders}>
+                <div className={aboutStyles.slider}>
+                    <div className={fastTrack}>
+                        <div className={aboutStyles.slide}>
+                            <img src={sass.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={github.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={css.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={javascript.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={php.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={npm.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={jamstack.src} alt=""/>
+                        </div>
+                        <div placeholder={"apache"} className={aboutStyles.slide}>
+                            <img src={apache.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={bootstrap.src} alt="" aria-label={"Adobe XD"}/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={bitbucket.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={git.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={ga.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={handlebars.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={heroku.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={sass.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={github.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={css.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={javascript.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={php.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={npm.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={jamstack.src} alt=""/>
+                        </div>
+                        <div placeholder={"apache"} className={aboutStyles.slide}>
+                            <img src={apache.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={bootstrap.src} alt="" aria-label={"Adobe XD"}/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={bitbucket.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={git.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={ga.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={handlebars.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={heroku.src} alt=""/>
+                        </div>
+                    </div>
+                </div>
+                <div className={aboutStyles.slider}>
+                    <div className={slowTrack}>
+                        <div className={aboutStyles.slide}>
+                            <img src={jira.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={json.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={linux.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={mariadb.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={mobx.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={mysql.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={netlify.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={next.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={nginx.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={react.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={composer.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={vagrant.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={wp.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={ts.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={jira.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={json.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={linux.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={mariadb.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={mobx.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={mysql.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={netlify.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={next.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={nginx.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={react.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={composer.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={vagrant.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={wp.src} alt=""/>
+                        </div>
+                        <div className={aboutStyles.slide}>
+                            <img src={ts.src} alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-          <div className={aboutStyles.slider}>
-              <div className={fastTrack}>
-                  <div className={aboutStyles.slide}>
-                      <img src={sass.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={github.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={css.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={javascript.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={php.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={jquery.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={jamstack.src} alt=""/>
-                  </div>
-                  <div placeholder={"apache"} className={aboutStyles.slide}>
-                      <img src={apache.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={bootstrap.src} alt="" aria-label={"Adobe XD"}/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={bitbucket.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={git.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={ga.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={handlebars.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={heroku.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={sass.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={github.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={css.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={javascript.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={php.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={jquery.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={jamstack.src} alt=""/>
-                  </div>
-                  <div placeholder={"apache"} className={aboutStyles.slide}>
-                      <img src={apache.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={bootstrap.src} alt="" aria-label={"Adobe XD"}/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={bitbucket.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={git.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={ga.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={handlebars.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={heroku.src} alt=""/>
-                  </div>
-              </div>
-          </div>
-          <div className={aboutStyles.slider}>
-              <div className={slowTrack}>
-                  <div className={aboutStyles.slide}>
-                      <img src={jira.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={json.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={linux.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={mariadb.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={mobx.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={mysql.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={netlify.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={next.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={nginx.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={react.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={composer.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={vagrant.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={wp.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={ts.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={jira.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={json.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={linux.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={mariadb.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={mobx.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={mysql.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={netlify.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={next.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={nginx.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={react.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={composer.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={vagrant.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={wp.src} alt=""/>
-                  </div>
-                  <div className={aboutStyles.slide}>
-                      <img src={ts.src} alt=""/>
-                  </div>
-              </div>
-          </div>
+
+
+          <section className={projectStyles.projects}>
+              <h2>
+                  Some of my projects
+              </h2>
+          </section>
+
       </main>
 
       <footer>
