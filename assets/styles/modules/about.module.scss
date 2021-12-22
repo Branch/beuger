@@ -53,48 +53,9 @@
   border-bottom: 4px solid $purple;
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(calc(0));
-  }
-  100% {
-    transform: translateX(calc(-250px * 14));
-  }
-}
-.slider {
-  height: 100px;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: 100vw;
-}
-
 .sliders {
-  margin: 3rem 0;
-}
-
-.track {
   display: flex;
-  width: calc(250px * 28);
-
-  &.fast {
-    -webkit-animation: scroll 35s linear infinite;
-    animation: scroll 35s linear infinite;
-  }
-
-  &.slow {
-    -webkit-animation: scroll 40s linear infinite;
-    animation: scroll 40s linear infinite;
-  }
-}
-.slide {
-  width: 250px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  img {
-    height: 3rem;
-  }
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 0 0 0;
 }
