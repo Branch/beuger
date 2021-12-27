@@ -1,11 +1,6 @@
 import Head from 'next/head'
 import Emoji from '../components/emoji';
 
-import classNames from 'classnames/bind';
-
-
-
-
 /**
  * Neu style components
  */
@@ -21,11 +16,15 @@ import { Card } from '@branch/neumorphism.ui.card';
 import menuStyles from '../assets/styles/modules/menu.module.scss';
 import aboutStyles from '../assets/styles/modules/about.module.scss';
 import projectStyles from '../assets/styles/modules/projects.module.scss';
+import connectStyles from '../assets/styles/modules/connect.module.scss';
 
 /**
  * Images
  */
 import pic from '../assets/images/me.jpeg';
+import motogp from '../assets/images/projects/gpresults.png';
+import bit from '../assets/images/projects/bit.png';
+import portfolio from '../assets/images/projects/portfolio.png';
 
 import php from '../assets/images/logos/php.svg';
 import npm from '../assets/images/logos/npm.svg';
@@ -61,21 +60,10 @@ import React from "react";
 
 export default function Home() {
 
-    const cx = classNames.bind(aboutStyles);
-    const fastTrack = cx({
-        track: true,
-        fast: true
-    })
-    const slowTrack = cx({
-        track: true,
-        slow: true
-    })
-
-
     return (
     <div className="container">
       <Head>
-        <title>Home of Andreas</title>
+        <title>Andreas Beuger</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
@@ -168,8 +156,8 @@ export default function Home() {
                         heroku.src
                     ]}
                     type={"pressed"}
-                    size={""}
-                    padding={[0, 0, 0, 0]}
+                    size={"md"}
+                    padding={[100, 0, 100, 0]}
                 />
 
                 <Slider
@@ -205,8 +193,8 @@ export default function Home() {
                         ts.src
                     ]}
                     type={"pressed"}
-                    size={""}
-                    padding={[0, 0, 0, 0]}
+                    size={"md"}
+                    padding={[100, 0, 100, 0]}
                 />
             </section>
 
@@ -223,8 +211,8 @@ export default function Home() {
                       text="SPA used to get session data for MotoGP. MotoGP provides no api so this is done by parsing data from their results page. This can therefore break at any time."
                       type="flat"
                       size="md"
-                      padding={[20, 20, 20, 20]}
-                      image={"https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg"}
+                      padding={[15,15,15,15]}
+                      image={motogp.src}
                       tags={['React', 'Express', 'Sass']}
                   />
                   <Card
@@ -233,8 +221,8 @@ export default function Home() {
                       text="A neumorphism style component library built using bit.dev"
                       type="flat"
                       size="md"
-                      padding={[20, 20, 20, 20]}
-                      image={"https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg"}
+                      padding={[15,15,15,15]}
+                      image={bit.src}
                       tags={['React', 'Typescript', 'Bit.dev', 'CSS Modules', 'Sass']}
                   />
                   <Card
@@ -243,11 +231,37 @@ export default function Home() {
                       text="My website. Main use is for me to try out new frontend stuff."
                       type="flat"
                       size="md"
-                      padding={[20, 20, 20, 20]}
-                      image={"https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg"}
+                      padding={[15,15,15,15]}
+                      image={portfolio.src}
                       tags={['React', 'Next.js', 'CSS modules', 'Sass']}
                   />
               </div>
+          </section>
+
+
+
+          <section className={connectStyles.connect}>
+              <h2>
+                  Connect
+              </h2>
+                <div className={connectStyles.connectors}>
+                    <a href={"mailto:andreasbeuger@gmail.com"}>
+                        <Circle
+                            width={5}
+                            type={"concave"}
+                            size={""}
+                            img={pic.src}
+                        />
+                    </a>
+                    <a href={"https://www.linkedin.com/in/andreas-beuger-443250132"} target={"_blank"}>
+                        <Circle
+                            width={5}
+                            type={"concave"}
+                            size={""}
+                            img={pic.src}
+                        />
+                    </a>
+                </div>
           </section>
 
       </main>

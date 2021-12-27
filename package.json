@@ -10,7 +10,7 @@
     "@branch/neumorphism.ui.card": "^0.0.4",
     "@branch/neumorphism.ui.circle": "^0.0.1",
     "@branch/neumorphism.ui.link": "^0.0.2",
-    "@branch/neumorphism.ui.slider": "^0.0.1",
+    "@branch/neumorphism.ui.slider": "^0.0.2",
     "classnames": "^2.2.6",
     "next": "latest",
     "next-transpile-modules": "^9.0.0",

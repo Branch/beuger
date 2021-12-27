@@ -14,19 +14,27 @@
   display: flex;
   padding: 5rem 0;
   gap: 5rem;
-  justify-content: space-around;
 
   h3 {
     margin-top: 2rem;
+    font-size: 2rem;
   }
 
   p {
     margin-bottom: 2rem;
+    line-height: 1.2;
+    font-size: 1rem;
+    color: rgba(0,0,0, 0.6);
   }
 
   div {
+    flex-basis: 100%;
+
     div {
+      flex-basis: unset;
       color: $purple;
+      display: flex;
+      flex-wrap: wrap;
     }
   }
 }
