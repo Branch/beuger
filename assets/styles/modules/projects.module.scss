@@ -9,3 +9,24 @@
     text-align: left;
   }
 }
+
+.feed {
+  display: flex;
+  padding: 5rem 0;
+  gap: 5rem;
+  justify-content: space-around;
+
+  h3 {
+    margin-top: 2rem;
+  }
+
+  p {
+    margin-bottom: 2rem;
+  }
+
+  div {
+    div {
+      color: $purple;
+    }
+  }
+}

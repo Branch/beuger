@@ -11,11 +11,14 @@ import classNames from 'classnames/bind';
  */
 import { Circle } from '@branch/neumorphism.ui.circle';
 import { Slider } from '@branch/neumorphism.ui.slider';
+import { Link } from '@branch/neumorphism.ui.link';
+import { Card } from '@branch/neumorphism.ui.card';
 
 /**
  * Styles
  */
 
+import menuStyles from '../assets/styles/modules/menu.module.scss';
 import aboutStyles from '../assets/styles/modules/about.module.scss';
 import projectStyles from '../assets/styles/modules/projects.module.scss';
 
@@ -53,6 +56,7 @@ import vagrant from '../assets/images/logos/vagrant.svg';
 import wp from '../assets/images/logos/wordpress-blue.svg';
 import ts from '../assets/images/logos/typescript-2.svg';
 import composer from '../assets/images/logos/composer.svg';
+import React from "react";
 
 
 export default function Home() {
@@ -75,10 +79,31 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
-        <nav>
-          <a>About</a>
-          <a>Projects</a>
-          <a>Connect</a>
+        <nav className={menuStyles.menu}>
+            <Link
+                text="About"
+                url="https://bit.dev"
+                type="flat"
+                padding={[10, 20, 10, 20]}
+                size={""}
+                newWindow={true}
+            />
+            <Link
+                text="Projects"
+                url="https://bit.dev"
+                type="flat"
+                padding={[10, 20, 10, 20]}
+                size={""}
+                newWindow={true}
+            />
+            <Link
+                text="Connect"
+                url="https://bit.dev"
+                type="flat"
+                padding={[10, 20, 10, 20]}
+                size={""}
+                newWindow={true}
+            />
         </nav>
       </header>
 
@@ -111,7 +136,7 @@ export default function Home() {
 
             <section className={aboutStyles.sliders}>
                 <Slider
-                    speed={35}
+                    speed={80}
                     images={[
                         sass.src,
                         github.src,
@@ -148,7 +173,7 @@ export default function Home() {
                 />
 
                 <Slider
-                    speed={40}
+                    speed={100}
                     images={[
                         jira.src,
                         json.src,
@@ -191,6 +216,38 @@ export default function Home() {
               <h2>
                   Some of my projects
               </h2>
+              <div className={projectStyles.feed}>
+                  <Card
+                      link="https://gpresults.info"
+                      heading="Simple MotoGP results"
+                      text="SPA used to get session data for MotoGP. MotoGP provides no api so this is done by parsing data from their results page. This can therefore break at any time."
+                      type="flat"
+                      size="md"
+                      padding={[20, 20, 20, 20]}
+                      image={"https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg"}
+                      tags={['React', 'Express', 'Sass']}
+                  />
+                  <Card
+                      link="https://bit.dev/branch/neumorphism"
+                      heading="Component library"
+                      text="A neumorphism style component library built using bit.dev"
+                      type="flat"
+                      size="md"
+                      padding={[20, 20, 20, 20]}
+                      image={"https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg"}
+                      tags={['React', 'Typescript', 'Bit.dev', 'CSS Modules', 'Sass']}
+                  />
+                  <Card
+                      link="https://github.com/Branch/beuger"
+                      heading="Portfolio page"
+                      text="My website. Main use is for me to try out new frontend stuff."
+                      type="flat"
+                      size="md"
+                      padding={[20, 20, 20, 20]}
+                      image={"https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg"}
+                      tags={['React', 'Next.js', 'CSS modules', 'Sass']}
+                  />
+              </div>
           </section>
 
       </main>
