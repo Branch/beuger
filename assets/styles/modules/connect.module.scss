@@ -1,4 +1,5 @@
 @import "../variables";
+@import "../fonts";
 
 .connect {
   width: 100vw;
@@ -6,6 +7,7 @@
   margin: 15rem 0 0 0;
 
   h2 {
+    font-family: 'Baloo Thambi 2', cursive;
     text-align: left;
   }
 }
@@ -16,5 +18,12 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  flex-direction: column;
+
+  a {
+    transition: 0.4s cubic-bezier(0, 0.57, 0.49, 1.51);
+
+    &:hover {
+      transform: scale(0.95);
+    }
+  }
 }

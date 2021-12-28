@@ -16,6 +16,7 @@
     "next-transpile-modules": "^9.0.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "sass": "^1.45.0"
+    "sass": "^1.45.0",
+    "scroll-to-element": "^2.0.3"
   }
 }

@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Emoji from '../components/emoji';
+import scrollToElement from 'scroll-to-element';
+
 
 /**
  * Neu style components
@@ -30,7 +32,7 @@ import php from '../assets/images/logos/php.svg';
 import npm from '../assets/images/logos/npm.svg';
 import javascript from '../assets/images/logos/javascript.svg';
 import jamstack from '../assets/images/logos/jamstack.svg';
-import github from '../assets/images/logos/github-2.svg';
+import github from '../assets/images/logos/github.svg';
 import css from '../assets/images/logos/css-3.svg';
 import sass from '../assets/images/logos/sass-1.svg';
 
@@ -55,11 +57,13 @@ import vagrant from '../assets/images/logos/vagrant.svg';
 import wp from '../assets/images/logos/wordpress-blue.svg';
 import ts from '../assets/images/logos/typescript-2.svg';
 import composer from '../assets/images/logos/composer.svg';
+import mail from '../assets/images/logos/gmail.svg';
+import linkedin from '../assets/images/logos/linkedin.svg';
+
 import React from "react";
 
 
 export default function Home() {
-
     return (
     <div className="container">
       <Head>
@@ -200,7 +204,7 @@ export default function Home() {
 
 
 
-          <section className={projectStyles.projects}>
+          <section className={projectStyles.projects} id={'projects'}>
               <h2>
                   Some of my projects
               </h2>
@@ -247,35 +251,32 @@ export default function Home() {
                 <div className={connectStyles.connectors}>
                     <a href={"mailto:andreasbeuger@gmail.com"}>
                         <Circle
-                            width={5}
+                            width={3}
                             type={"concave"}
                             size={""}
-                            img={pic.src}
+                            img={mail.src}
                         />
                     </a>
                     <a href={"https://www.linkedin.com/in/andreas-beuger-443250132"} target={"_blank"}>
                         <Circle
-                            width={5}
+                            width={3}
                             type={"concave"}
                             size={""}
-                            img={pic.src}
+                            img={linkedin.src}
+                        />
+                    </a>
+                    <a href={"https://github.com/branch"} target={"_blank"}>
+                        <Circle
+                            width={3}
+                            type={"concave"}
+                            size={""}
+                            img={github.src}
                         />
                     </a>
                 </div>
           </section>
 
       </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
-        </a>
-      </footer>
 
       <style jsx>{`
         .container {
