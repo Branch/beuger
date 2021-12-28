@@ -33,13 +33,26 @@
 
   div {
     flex-basis: 100%;
-    position: relative;
 
     div {
+      font-size: 0.8rem;
       flex-basis: unset;
       color: $purple;
       display: flex;
       flex-wrap: wrap;
     }
+  }
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 0 4rem 0;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    color: black;
   }
 }

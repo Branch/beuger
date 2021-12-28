@@ -17,13 +17,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-
-  a {
-    transition: 0.4s cubic-bezier(0, 0.57, 0.49, 1.51);
-
-    &:hover {
-      transform: scale(0.95);
-    }
-  }
+  gap: 4rem;
 }
