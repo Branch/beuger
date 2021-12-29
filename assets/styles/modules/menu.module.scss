@@ -1,5 +1,5 @@
 .header {
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 992px) {
     display: flex;
     padding: 1rem;
     justify-content: flex-end;
@@ -19,7 +19,7 @@
     top: 1rem;
     right: 1rem;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 992px) {
       display: none;
     }
   }
