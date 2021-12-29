@@ -6,7 +6,7 @@ import github from "../../assets/images/logos/github.svg";
 
 export default function Connect({refProp}) {
     return(
-        <section ref={refProp} className={connectStyles.connect}>
+        <section ref={refProp} id={"connectors"} className={connectStyles.connect}>
             <div className={connectStyles.connectors}>
                 <a href={"mailto:andreasbeuger@gmail.com"}>
                     <Circle
