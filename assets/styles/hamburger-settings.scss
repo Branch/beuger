@@ -1,5 +1,10 @@
+/**
+  Overridden settings for the mobile hamburger menu
+ */
+
 $hamburger-layer-width: 25px;
 $hamburger-layer-height: 3px;
 $hamburger-padding-x: 10px;
 $hamburger-padding-y: 10px;
 $hamburger-layer-spacing: 4px;
+$hamburger-layer-color: rgba(0, 0, 0, 0.6) !default;

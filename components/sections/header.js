@@ -71,7 +71,7 @@ export default function Header({aboutClick, connectClick, projectsClick}) {
             <Card
                 type="flat"
                 size=""
-                padding={[25,25,25,25]}
+                padding={[25,25,21,25]}
             >
                 <button onClick={toggleClick} className={menuOpen === true ? 'hamburger hamburger--collapse is-active' : 'hamburger hamburger--collapse'} type="button">
                   <span className="hamburger-box">
