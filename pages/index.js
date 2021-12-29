@@ -1,5 +1,6 @@
-import Head from 'next/head'
-import React, {useRef, useEffect} from 'react'
+import Head from 'next/head';
+import Script from 'next/script';
+import React, {useRef, useEffect} from 'react';
 
 /**
  * Styles
@@ -35,6 +36,16 @@ export default function Home() {
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
           <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@800&display=swap" rel="stylesheet" />
+
+          <!-- Global site tag (gtag.js) - Google Analytics -->
+          <Script async src="https://www.googletagmanager.com/gtag/js?id=G-2BRJFFC95P" />
+          <Script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-2BRJFFC95P');
+          </Script>
       </Head>
       <Header
         aboutClick={() => scrollToRef(aboutRef)}
