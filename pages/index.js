@@ -1,6 +1,5 @@
 import Head from 'next/head';
-import Script from 'next/script';
-import React, {useRef, useEffect, useState} from 'react';
+import React, {useRef} from 'react';
 
 /**
  * Styles
@@ -23,15 +22,10 @@ export default function Home() {
   const aboutRef = useRef(null)
   const projectRef = useRef(null)
   const connectRef = useRef(null)
-  const [gaLoaded, toggleGa] = useState(false)
 
   const scrollToRef = (ref) => {
     ref.current.scrollIntoView({ behavior: 'smooth'});
   }
-
-  useEffect(() => {
-      toggleGa(gaLoaded !== true)
-  }, [])
 
   return (
     <div className={containerStyles.container}>
@@ -41,20 +35,6 @@ export default function Home() {
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
           <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@800&display=swap" rel="stylesheet" />
-          {gaLoaded &&
-              <>
-              <Script src="https://www.googletagmanager.com/gtag/js?id=G-2BRJFFC95P" strategy="afterInteractive" />
-              <Script id="google-analytics" strategy="afterInteractive">
-                  {`
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){window.dataLayer.push(arguments);}
-                  gtag('js', new Date());
-
-                  gtag('config', 'G-2BRJFFC95P');
-                `}
-              </Script>
-              </>
-          }
       </Head>
       <Header
         aboutClick={() => scrollToRef(aboutRef)}

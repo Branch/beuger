@@ -2,8 +2,13 @@
 
 // html and body styles
 import '../assets/styles/global.scss'
+import { useEffect } from 'react';
+import TagManager from 'react-gtm-module';
 
 function MyApp({ Component, pageProps }) {
+    useEffect(() => {
+        TagManager.initialize({ gtmId: 'G-2BRJFFC95P' });
+    }, []);
     return <Component {...pageProps} />
 }
 
