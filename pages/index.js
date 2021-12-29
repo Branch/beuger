@@ -1,3 +1,6 @@
+/**
+ * Components
+ */
 import Head from 'next/head';
 import React, {useRef} from 'react';
 
@@ -5,7 +8,6 @@ import React, {useRef} from 'react';
  * Styles
  */
 import containerStyles from '../assets/styles/modules/container.module.scss'
-
 
 /**
  * Sections

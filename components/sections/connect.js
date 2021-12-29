@@ -1,5 +1,16 @@
+/**
+ * Styles
+ */
 import connectStyles from "../../assets/styles/modules/connect.module.scss";
+
+/**
+ * Components
+ */
 import {Circle} from "@branch/neumorphism.ui.circle";
+
+/**
+ * Assets
+ */
 import mail from "../../assets/images/logos/gmail.svg";
 import linkedin from "../../assets/images/logos/linkedin.svg";
 import github from "../../assets/images/logos/github.svg";

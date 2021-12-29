@@ -1,7 +1,14 @@
+/**
+ * Styles
+ */
 import menuStyles from "../../assets/styles/modules/menu.module.scss";
+
+/**
+ * Components
+ */
 import {Button} from "@branch/neumorphism.ui.button";
 import {Card} from "@branch/neumorphism.ui.card";
-import {useState} from "react";
+import { useState } from "react";
 import classNames from 'classnames';
 
 export default function Header({aboutClick, connectClick, projectsClick}) {

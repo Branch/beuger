@@ -1,6 +1,17 @@
+/**
+ * Styles
+ */
 import aboutStyles from "../../assets/styles/modules/about.module.scss";
+
+/**
+ * Components
+ */
 import Emoji from "../emoji";
 import {Circle} from "@branch/neumorphism.ui.circle";
+
+/**
+ * Assets
+ */
 import pic from "../../assets/images/me.jpeg";
 
 export default function About({refProp}) {

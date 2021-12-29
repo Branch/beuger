@@ -1,7 +1,18 @@
+/**
+ * Styles
+ */
 import projectStyles from "../../assets/styles/modules/projects.module.scss";
+
+/**
+ * Components
+ */
 import {Card} from "@branch/neumorphism.ui.card";
-import motogp from "../../assets/images/projects/gpresults.png";
 import {Link} from "@branch/neumorphism.ui.link";
+
+/**
+ * Assets
+ */
+import motogp from "../../assets/images/projects/gpresults.png";
 import bit from "../../assets/images/projects/bit.png";
 import portfolio from "../../assets/images/projects/portfolio.png";
 

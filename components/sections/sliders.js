@@ -1,5 +1,16 @@
+/**
+ * Styles
+ */
 import aboutStyles from "../../assets/styles/modules/about.module.scss";
+
+/**
+ * Components
+ */
 import {Slider} from "@branch/neumorphism.ui.slider";
+
+/**
+ * Assets
+ */
 import sass from "../../assets/images/logos/sass-1.svg";
 import github from "../../assets/images/logos/github.svg";
 import css from "../../assets/images/logos/css-3.svg";
