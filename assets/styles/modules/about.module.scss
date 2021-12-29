@@ -7,6 +7,11 @@
   gap: 2rem;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 
   h1 {
     font-family: 'Baloo Thambi 2', cursive;
@@ -18,12 +23,29 @@
 
   h1,
   p {
-    text-align: left;
+    text-align: center;
+
+    @media only screen and (min-width: 768px) {
+      text-align: left;
+    }
+  }
+}
+
+.portrait {
+  display: none;
+
+  @media only screen and (min-width: 768px) {
+    display: block;
   }
 }
 
 .tech {
   font-family: 'Baloo Thambi 2', cursive;
+  text-align: center;
+
+  @media only screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .sec {
@@ -37,11 +59,21 @@
   margin: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
+
+  @media only screen and (min-width: 768px) {
+    justify-content: left;
+  }
 }
 
 .base {
   display: flex;
   align-items: center;
+  justify-content: center;
+
+  @media only screen and (min-width: 768px) {
+    justify-content: left;
+  }
 }
 
 .short {
@@ -50,10 +82,17 @@
   margin-bottom: 2rem;
   display: flex;
   align-items: center;
+  justify-content: center;
+
+  @media only screen and (min-width: 768px) {
+    justify-content: left;
+  }
 }
 
 .half {
-  width: 40%;
+  @media only screen and (min-width: 768px) {
+    width: 40%;
+  }
 }
 
 .highlight {
@@ -61,8 +100,23 @@
 }
 
 .sliders {
+  display: none;
+
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 0 0 0;
+  }
+}
+
+.slidersMobile {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 3rem 0 0 0;
+  padding: 1rem 0 0 0;
+
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
 }

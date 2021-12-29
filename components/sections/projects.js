@@ -5,9 +5,9 @@ import {Link} from "@branch/neumorphism.ui.link";
 import bit from "../../assets/images/projects/bit.png";
 import portfolio from "../../assets/images/projects/portfolio.png";
 
-export default function Projects() {
+export default function Projects({refProp}) {
     return(
-        <section className={projectStyles.projects} id={'projects'}>
+        <section ref={refProp} className={projectStyles.projects} id={'projects'}>
             <h2>
                 Some of my projects
             </h2>
@@ -19,7 +19,7 @@ export default function Projects() {
                     size="md"
                     padding={[15,15,15,15]}
                     image={motogp.src}
-                    tags={['React', 'Express', 'Sass']}
+                    tags={['Netlify', 'React', 'Express', 'Sass']}
                 >
                     <div className={projectStyles.links}>
                         <Link
@@ -73,13 +73,13 @@ export default function Projects() {
                     </div>
                 </Card>
                 <Card
-                    heading="Portfolio page"
-                    text="My website. Main use is for me to try out new frontend stuff."
+                    heading="My website"
+                    text="Main use is for me to try out new frontend stuff and experiment with different things."
                     type="flat"
                     size="md"
                     padding={[15,15,15,15]}
                     image={portfolio.src}
-                    tags={['React', 'Next.js', 'CSS modules', 'Sass']}
+                    tags={['Netlify', 'React', 'Next.js', 'CSS modules', 'Sass']}
                 >
                     <div className={projectStyles.links}>
                         <Link

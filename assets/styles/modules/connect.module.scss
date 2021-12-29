@@ -4,7 +4,11 @@
 .connect {
   width: 100vw;
   max-width: 1250px;
-  margin: 15rem 0 0 0;
+  margin: 3rem 0;
+
+  @media only screen and (min-width: 728px) {
+    margin: 15rem 0 0 0;
+  }
 
   h2 {
     font-family: 'Baloo Thambi 2', cursive;

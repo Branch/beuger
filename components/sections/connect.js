@@ -4,9 +4,9 @@ import mail from "../../assets/images/logos/gmail.svg";
 import linkedin from "../../assets/images/logos/linkedin.svg";
 import github from "../../assets/images/logos/github.svg";
 
-export default function Connect() {
+export default function Connect({refProp}) {
     return(
-        <section className={connectStyles.connect}>
+        <section ref={refProp} className={connectStyles.connect}>
             <div className={connectStyles.connectors}>
                 <a href={"mailto:andreasbeuger@gmail.com"}>
                     <Circle

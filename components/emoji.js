@@ -1,4 +1,3 @@
-import React from 'react';
 const Emoji = props => (
     <span
         style={{fontSize: 2 + 'rem', padding: 0.5 + 'rem'}}

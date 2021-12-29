@@ -2,20 +2,34 @@
 @import "../fonts";
 
 .projects {
-  width: 100vw;
   max-width: 1250px;
   margin: 15rem 0 0 0;
 
+  @media only screen and (min-width: 768px) {
+    width: 100vw;
+  }
+
   h2 {
     font-family: 'Baloo Thambi 2', cursive;
-    text-align: left;
+    text-align: center;
+
+    @media only screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
 }
 
 .feed {
   display: flex;
-  padding: 5rem 0;
-  gap: 5rem;
+  padding: 2rem;
+  gap: 8rem;
+  flex-direction: column;
+
+  @media only screen and (min-width: 768px) {
+    padding: 5rem 0;
+    gap: 5rem;
+    flex-direction: row;
+  }
 
   h3 {
     font-family: 'Baloo Thambi 2', cursive;
@@ -25,10 +39,10 @@
   }
 
   p {
-    margin-bottom: 2rem;
     line-height: 1.2;
     font-size: 1rem;
     color: rgba(0,0,0, 0.6);
+    margin: 0;
   }
 
   div {
@@ -47,7 +61,7 @@
 .links {
   display: flex;
   gap: 2rem;
-  padding: 1rem 0 4rem 0;
+  padding: 3rem 0;
   align-items: center;
   justify-content: center;
 

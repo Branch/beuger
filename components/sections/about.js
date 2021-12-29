@@ -3,11 +3,11 @@ import Emoji from "../emoji";
 import {Circle} from "@branch/neumorphism.ui.circle";
 import pic from "../../assets/images/me.jpeg";
 
-export default function About() {
+export default function About({refProp}) {
     return (
         <section className={aboutStyles.sec}>
             <div className={aboutStyles.about}>
-                <div className={aboutStyles.half}>
+                <div ref={refProp} className={aboutStyles.half}>
                     <p className={aboutStyles.hi}>Hello there <Emoji label={"hi"} symbol={"👋"} /> i'm</p>
                     <h1>
                         Andreas Beuger
@@ -17,12 +17,14 @@ export default function About() {
                     <p>In short, <span className={aboutStyles.highlight}>I do web.</span></p>
                     <p className={aboutStyles.base}>Based in <Emoji symbol={"🇸🇪"} /></p>
                 </div>
-                <Circle
-                    width={30}
-                    type={"concave"}
-                    size={"md"}
-                    img={pic.src}
-                />
+                <div className={aboutStyles.portrait}>
+                    <Circle
+                        width={30}
+                        type={"concave"}
+                        size={"md"}
+                        img={pic.src}
+                    />
+                </div>
             </div>
             <div className={aboutStyles.tech}>
                 <h2>

@@ -1,13 +1,60 @@
+.header {
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    padding: 1rem;
+    justify-content: flex-end;
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  div[class^="card"] {
+    width: 2rem;
+    height: 2rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    @media only screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+}
+
 .menu {
-  display: flex;
-  gap: 2rem;
-  padding: 2rem 0;
-  justify-content: flex-end;
-  width: 100vw;
-  max-width: 1200px;
+  display: none;
+
+  @media only screen and (min-width: 998px) {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 0;
+    justify-content: flex-end;
+    width: 100vw;
+    max-width: 1200px;
+  }
 
   a {
     color: black;
     text-decoration: none;
   }
+}
+
+.mobileMenu {
+  margin-top: -22rem;
+  padding-bottom: 8rem;
+  transition: all .2s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mobileMenuActive {
+  margin-top: 0;
+  padding-bottom: 0;
 }
