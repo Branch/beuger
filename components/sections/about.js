@@ -39,7 +39,7 @@ export default function About({refProp}) {
             </div>
             <div className={aboutStyles.tech}>
                 <h2>
-                    Stuff i'm familiar with
+                    Things i'm familiar with
                 </h2>
             </div>
         </section>

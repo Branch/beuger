@@ -20,7 +20,7 @@ export default function Projects({refProp}) {
     return(
         <section ref={refProp} className={projectStyles.projects} id={'projects'}>
             <h2>
-                Some of my projects
+                Some of my personal projects
             </h2>
             <div className={projectStyles.feed}>
                 <Card
