@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+
   @media only screen and (max-width: 992px) {
     display: flex;
     padding: 1rem;

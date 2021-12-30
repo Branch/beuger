@@ -69,9 +69,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 0.4rem;
 
   @media only screen and (min-width: 992px) {
     justify-content: left;
+  }
+
+  img {
+    width: 2rem;
   }
 }
 
@@ -83,6 +88,10 @@
   align-items: center;
   justify-content: center;
 
+  span {
+    font-weight: unset;
+  }
+
   @media only screen and (min-width: 992px) {
     justify-content: left;
   }
@@ -91,6 +100,19 @@
 .half {
   @media only screen and (min-width: 992px) {
     width: 40%;
+  }
+
+  a {
+    text-decoration: none;
+    position: relative;
+    transition: all 0.2s linear;
+    color: black;
+    text-decoration: underline;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.6);
+      transition: all 0.2s linear;
+    }
   }
 }
 
