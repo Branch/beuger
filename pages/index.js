@@ -37,6 +37,7 @@ export default function Home() {
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin={"true"} />
           <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@800&display=swap" rel="stylesheet" />
+          <meta property="og:description" content="Portfolio / experimental site" key="description" />
       </Head>
       <Header
         aboutClick={() => scrollToRef(aboutRef)}
