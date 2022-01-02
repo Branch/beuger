@@ -27,7 +27,7 @@ export default function Projects({refProp}) {
                     heading="Simple MotoGP results"
                     text="SPA used to get session data for MotoGP. MotoGP provides no api so this is done by parsing data from their results page. This can therefore break at any time."
                     type="flat"
-                    size="md"
+                    size=""
                     padding={[15,15,15,15]}
                     image={motogp.src}
                     tags={['Netlify', 'React', 'Express', 'Sass']}
@@ -39,7 +39,7 @@ export default function Projects({refProp}) {
                             url="https://gpresults.info/"
                             type="flat"
                             padding={[10, 20, 10, 20]}
-                            size={"sm"}
+                            size={""}
                             newWindow={true}
                         />
                         <Link
@@ -48,7 +48,7 @@ export default function Projects({refProp}) {
                             url="https://github.com/Branch/motogp"
                             type="flat"
                             padding={[10, 20, 10, 20]}
-                            size={"sm"}
+                            size={""}
                             newWindow={true}
                         />
                     </div>
@@ -57,7 +57,7 @@ export default function Projects({refProp}) {
                     heading="Component library"
                     text="A neumorphism style component library built using bit.dev"
                     type="flat"
-                    size="md"
+                    size=""
                     padding={[15,15,15,15]}
                     image={bit.src}
                     tags={['React', 'Typescript', 'Bit.dev', 'CSS Modules', 'Sass']}
@@ -69,7 +69,7 @@ export default function Projects({refProp}) {
                             url="https://bit.dev/branch/neumorphism/pages/welcome"
                             type="flat"
                             padding={[10, 20, 10, 20]}
-                            size={"sm"}
+                            size={""}
                             newWindow={true}
                         />
                         <Link
@@ -78,7 +78,7 @@ export default function Projects({refProp}) {
                             url="https://github.com/Branch/component-lib"
                             type="flat"
                             padding={[10, 20, 10, 20]}
-                            size={"sm"}
+                            size={""}
                             newWindow={true}
                         />
                     </div>
@@ -87,7 +87,7 @@ export default function Projects({refProp}) {
                     heading="My website"
                     text="Main use is for me to try out new frontend stuff and experiment with different things."
                     type="flat"
-                    size="md"
+                    size=""
                     padding={[15,15,15,15]}
                     image={portfolio.src}
                     tags={['Netlify', 'React', 'Next.js', 'CSS modules', 'Sass']}
@@ -99,7 +99,7 @@ export default function Projects({refProp}) {
                             url="https://github.com/Branch/beuger"
                             type="flat"
                             padding={[10, 20, 10, 20]}
-                            size={"sm"}
+                            size={""}
                             newWindow={true}
                         />
                     </div>
