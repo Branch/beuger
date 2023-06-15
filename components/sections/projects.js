@@ -33,6 +33,15 @@ export default function Projects({ refProp }) {
           <div className={projectStyles.links}>
             <Link
               hoverable={true}
+              text="View live"
+              url="https://suspicious-einstein-fc973e.netlify.app/"
+              type="flat"
+              padding={[10, 20, 10, 20]}
+              size={""}
+              newWindow={true}
+            />
+            <Link
+              hoverable={true}
               text="View on Github"
               url="https://github.com/Branch/motogp"
               type="flat"
